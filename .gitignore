@@ -1,0 +1,4 @@
+.vscode
+.bin
+@mongodb-js
+node_modules
