@@ -1,4 +1,6 @@
 const express = require('express')
+const authRouter = require('./routes')
+
 
 const app = express()
 
@@ -10,10 +12,7 @@ app.get('/users', function(req ,res){ //req stands for request and res is for re
 })
 
 
-app.post('/sum', function(req,res){
-    const {num1, num2} = req.body
-    return res.json({Sum: Number(num1) + Number(num2)})// post is for getting data in raw input
-})
+app.use(authRouter)
 
 
 
