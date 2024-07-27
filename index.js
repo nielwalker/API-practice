@@ -12,7 +12,7 @@ app.get('/users', function(req ,res){ //req stands for request and res is for re
 })
 
 
-app.use(authRouter)
+app.use("/user",authRouter)
 
 
 
